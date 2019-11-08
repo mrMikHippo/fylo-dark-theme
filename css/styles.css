@@ -78,6 +78,14 @@ nav {
   grid-gap: 10px;
 }
 
+.navbar a {
+  color: var(--white);
+}
+
+.navbar a:hover {
+  color: var(--inside-blue);
+}
+
 /* Main Section */
 main {
   background: var(--main-b);
@@ -102,7 +110,7 @@ main {
 
 .call-to-action-btn {
   background: linear-gradient(to right, var(--inside-cyan), var(--inside-blue));
-  border: none;
+  border: 1px solid transparent;
   border-radius: 50px;
   padding: 15px;
   font-size: 1rem;
@@ -111,6 +119,16 @@ main {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   width: 70%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.call-to-action-btn:hover {
+  cursor: pointer;
+  border-color: var(--inside-blue);
+}
+
+.call-to-action-btn:active {
+  background: none;
+  border-color: var(--inside-blue);
 }
 
 .cards {
@@ -138,6 +156,12 @@ main {
   border-bottom: 1px solid var(--inside-cyan);
   background: no-repeat url('../images/icon-arrow.svg');
   background-position: top right;
+  transition: border 0.1s linear;
+}
+
+.stay-productive-link:hover {
+  border-bottom: 1px solid transparent;
+  background-size: 17px;
 }
 
 /* Testimonials */
@@ -276,6 +300,9 @@ li[class~="icon"]:before {
 
 .footer-container a {
   color: var(--white);
+}
+.footer-container a:hover {
+  color: var(--inside-blue);
 }
 
  .social-links {
