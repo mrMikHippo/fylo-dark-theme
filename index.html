@@ -9,6 +9,9 @@
 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRaleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -16,12 +19,12 @@
 
 <body>
   <header>
-    <a href="#" title="brand">
-      <img class="logo" src="images/logo.svg" alt="">
+    <a class="logo" href="#" title="brand">
+      <img src="images/logo.svg" alt="">
     </a>
 
     <nav>
-      <ul>
+      <ul class="navbar">
         <li>Features</li>
         <li>Team</li>
         <li>Sign In</li>
@@ -30,12 +33,12 @@
   </header>
 
   <main>
-    <section class="intro">
+    <section class="call-to-action-intro">
       <img class="intro-img" src="images/illustration-intro.png" alt="">
       <h1>All your files in one secure location, accessible anywhere.</h1>
       <p class="description">Fylo stores all your most important files in one secure location. Access them wherever
         you need, share and collaborate with friends family, and co-workers.</p>
-      <button class="get-started-btn">Get Started</button>
+      <button class="call-to-action-btn">Get Started</button>
     </section>
 
     <div class="cards">
@@ -65,16 +68,16 @@
       </div>
     </div>
 
-    <section class="stay-productive">
+    <section class="stay-productive-section">
       <picture>
         <img src="images/illustration-stay-productive.png" alt="">
       </picture>
 
       <div class="stay-productive-desc">
         <h2 class="sub-title">Stay productive, wherever you are</h2>
-        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+        <p class="description">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
           storage needs.</p>
-        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+        <p class="description">Securely share files and folders with friends, family and colleagues for live collaboration. No email
           attachments required.</p>
         <a href="" class="stay-productive-link">See how Fylo works</a>
       </div>
@@ -109,19 +112,21 @@
         </div>
       </div>
     </div>
-
-    <section class="footer-get-access">
-      <h2>Get early access today</h2>
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-        questions, our support team would be happy to help you.</p>
-      <button class="get-started-btn">Get Started For Free</button>
-    </section>
-
   </main>
 
   <footer>
+    <section class="minor-call-to-action">
+      <h2>Get early access today</h2>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.</p>
+      <form class="call-to-action-form">
+        <input type="email" name="Email" aria-label="Email input" value="" placeholder="exmail@example.com" required>
+        <button class="call-to-action-btn minor-btn">Get Started For Free</button>
+      </form>
+    </section>
+
     <a class="footer-logo" href="#" title="footer logo">
-      <img src="images/logo.svg" alt="" class="logo">
+      <img src="images/logo.svg" alt="">
     </a>
 
     <div class="footer-container">
