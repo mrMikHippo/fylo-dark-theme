@@ -1,0 +1,79 @@
+@media screen and (min-width: 575px) {
+  /* Intro */
+  .call-to-action-wrapper {
+    max-width: 575px;
+    margin: 0 auto;
+    padding-top: 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  /* Intro */
+  .call-to-action-intro {
+    background-image: url('../images/bg-curvy-desktop.svg');
+  }
+  .call-to-action-wrapper {
+    max-width: 700px;
+  }
+  /* Cards */
+  .cards {
+    grid-template-columns: repeat(2, 350px);
+  }
+  /* Stay Productive Section */
+  .stay-productive-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .stay-productive-desc {
+    margin-left: 20px;
+  }
+  /* Testimonials */
+  .quotes:before {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    top: -19px;
+  }
+  /* Footer */
+  .minor-call-to-action {
+    max-width: 800px;
+  }
+
+  input[type="email"] {
+    flex: 2;
+  }
+
+  .minor-btn {
+    margin-top: 0;
+    margin-left: 10px;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* Intro */
+  .call-to-action-wrapper {
+    max-width: 800px;
+    font-size: 1.3rem;
+    padding-bottom: 150px;
+  }
+  /* Cards */
+  .cards {
+    grid-column-gap: 80px;
+  }
+  /* Testimonials */
+  .quotes:before {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    top: -24px;
+    left: -5px;
+  }
+    /* Footer */
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
